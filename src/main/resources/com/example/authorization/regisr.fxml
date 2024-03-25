@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #87CEEB;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <AnchorPane layoutY="80.0" prefHeight="325.0" prefWidth="600.0" style="-fx-background-color: #E0FFFF;">
+            <children>
+                <TextField fx:id="txtboxLogin" layoutX="176.0" layoutY="109.0" prefHeight="29.0" prefWidth="249.0" promptText="Login" style="-fx-background-color: #F0FFFF; -fx-border-color: #ADD8E6;">
+                    <font>
+                        <Font name="MV Boli" size="14.0" />
+                    </font>
+                </TextField>
+                <PasswordField fx:id="txtboxPassword" layoutX="176.0" layoutY="152.0" prefHeight="29.0" prefWidth="249.0" promptText="Password" style="-fx-background-color: #F0FFFF; -fx-border-color: #ADD8E6;">
+                    <font>
+                        <Font name="MV Boli" size="14.0" />
+                    </font>
+                </PasswordField>
+                <Button fx:id="btnAuth" layoutX="244.0" layoutY="265.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="113.0" style="-fx-background-color: #D8BFD8;" text="Sign up" textFill="#544d99" underline="true">
+                    <font>
+                        <Font name="MV Boli" size="14.0" />
+                    </font>
+                </Button>
+                <Label fx:id="labelAuth" layoutX="213.0" layoutY="14.0" prefHeight="35.0" prefWidth="187.0" text="Registration">
+                    <font>
+                        <Font name="Perpetua Bold Italic" size="32.0" />
+                    </font>
+                </Label>
+            <TextField fx:id="txtName" layoutX="176.0" layoutY="67.0" prefHeight="35.0" prefWidth="249.0" promptText="Your name" style="-fx-background-color: #F0FFFF; -fx-border-color: #ADD8E6;">
+                <font>
+                    <Font name="MV Boli" size="14.0" />
+                </font>
+            </TextField>
+            <PasswordField fx:id="txtRepeatPassw" layoutX="176.0" layoutY="196.0" prefHeight="37.0" prefWidth="249.0" promptText="Repeat password" style="-fx-background-color: #F0FFFF; -fx-border-color: #ADD8E6;">
+                <font>
+                    <Font name="MV Boli" size="14.0" />
+                </font>
+            </PasswordField>
+            <Label fx:id="labelname" layoutX="14.0" layoutY="73.0" prefHeight="25.0" prefWidth="124.0" text="Enter your name:">
+               <font>
+                  <Font name="MV Boli" size="14.0" />
+               </font></Label>
+            <Label fx:id="labellogin" layoutX="14.0" layoutY="115.0" prefHeight="25.0" prefWidth="124.0" text="Enter your login:">
+               <font>
+                  <Font name="MV Boli" size="14.0" />
+               </font></Label>
+            <Label fx:id="labelpassword" layoutX="14.0" layoutY="158.0" prefHeight="25.0" prefWidth="150.0" text="Enter your password:">
+               <font>
+                  <Font name="MV Boli" size="14.0" />
+               </font></Label>
+            </children>
+        </AnchorPane>
+        <Label fx:id="labalProgramm" layoutX="179.0" layoutY="15.0" prefHeight="40.0" prefWidth="242.0" text="Cool programm">
+            <font>
+                <Font name="Lucida Handwriting Italic" size="25.0" />
+            </font>
+        </Label>
+        <Button fx:id="btnRegistr" layoutX="481.0" layoutY="21.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="105.0" style="-fx-background-color: #D8BFD8;" text="Back" textFill="#544d99" underline="true">
+            <font>
+                <Font name="MV Boli" size="14.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>
