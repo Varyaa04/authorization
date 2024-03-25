@@ -11,6 +11,8 @@ module com.example.authorization {
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
 
+    requires java.sql;
+
     opens com.example.authorization to javafx.fxml;
     exports com.example.authorization;
 }
