@@ -53,6 +53,21 @@ public class RegistrController {
 
         btnRegister.setOnAction(event -> {
             dbHandler.signUpUser(txtName.getText(), txtboxLogin.getText(), txtboxPassword.getText());
+
+            Stage currentStage = (Stage) btnBack.getScene().getWindow();
+            currentStage.close();
+
+            try {
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("hello-view.fxml"));
+                Parent root = loader.load();
+
+                Stage authStage = new Stage();
+                authStage.setScene(new Scene(root));
+                authStage.showAndWait();
+
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         });
 
         btnBack.setOnAction(event -> {
@@ -66,6 +81,7 @@ public class RegistrController {
                 Stage authStage = new Stage();
                 authStage.setScene(new Scene(root));
                 authStage.showAndWait();
+
             } catch (IOException e) {
                 e.printStackTrace();
             }

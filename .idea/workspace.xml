@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="700184f2-84e6-4813-8047-8b877d4147a4" name="Changes" comment="Initial commit">
+    <list default="true" id="700184f2-84e6-4813-8047-8b877d4147a4" name="Changes" comment="авторизация и регистрация">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/authorization/AfterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/authorization/AfterController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/authorization/DatabaseHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/authorization/DatabaseHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/authorization/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/authorization/HelloApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/authorization/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/authorization/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/authorization/RegistrController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/authorization/RegistrController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/authorization/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/authorization/hello-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/authorization/regisr.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/authorization/register.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,6 +104,14 @@
       <option name="presentableId" value="Default" />
       <updated>1711362905233</updated>
     </task>
+    <task id="LOCAL-00001" summary="авторизация и регистрация">
+      <created>1714997996929</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1714997996929</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -126,7 +127,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="авторизация и регистрация" />
+    <option name="LAST_COMMIT_MESSAGE" value="авторизация и регистрация" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/authorization$All_in_authorization__2_.ic" NAME="All in authorization (2) Coverage Results" MODIFIED="1714991468012" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
