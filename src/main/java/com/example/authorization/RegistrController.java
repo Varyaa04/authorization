@@ -52,7 +52,24 @@ public class RegistrController {
         DatabaseHandler dbHandler = new DatabaseHandler();
 
         btnRegister.setOnAction(event -> {
-            dbHandler.signUpUser(txtName.getText(), txtboxLogin.getText(), txtboxPassword.getText());
+            String name = txtName.getText();
+            String login = txtboxLogin.getText();
+            String password = txtboxPassword.getText();
+            String repeatPassword = txtRepeatPassw.getText();
+
+            if (name.isEmpty() || login.isEmpty() || password.isEmpty() || repeatPassword.isEmpty()) {
+                // Вывести сообщение об ошибке о незаполненных полях
+                System.out.println("Пожалуйста, заполните все поля.");
+                return;
+            }
+
+            if (!password.equals(repeatPassword)) {
+                // Вывести сообщение об ошибке, если пароли не совпадают
+                System.out.println("Пароли не совпадают. Пожалуйста, введите одинаковые пароли.");
+                return;
+            }
+
+            dbHandler.signUpUser(name, login, password);
 
             Stage currentStage = (Stage) btnBack.getScene().getWindow();
             currentStage.close();
@@ -86,5 +103,4 @@ public class RegistrController {
                 e.printStackTrace();
             }
         });
-    }
-}
+    }}
