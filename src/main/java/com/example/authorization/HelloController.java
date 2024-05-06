@@ -25,7 +25,7 @@ public class HelloController {
     private Button btnAuth;
 
     @FXML
-    private Button btnRegistr;
+    private Button btnReg;
 
     @FXML
     private Label labalProgramm;
@@ -52,22 +52,20 @@ public class HelloController {
                 System.out.println("Login and password is empty");
         });
 
-        btnRegistr.setOnAction(event ->{
-            btnRegistr.getScene().getWindow().hide();
+        btnReg.setOnAction(event -> {
+            Stage currentStage = (Stage) btnReg.getScene().getWindow();
+            currentStage.close();
 
-            FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(getClass().getResource("/com.example.authorization/registr.fxml"));
+            try {
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("register.fxml"));
+                Parent root = loader.load();
 
-            try{
-                loader.load();
-            } catch (IOException e){
+                Stage registerStage = new Stage();
+                registerStage.setScene(new Scene(root));
+                registerStage.showAndWait();
+            } catch (IOException e) {
                 e.printStackTrace();
             }
-
-            Parent root = loader.getRoot();
-            Stage stage = new Stage();
-            stage.setScene(new Scene(root));
-            stage.showAndWait();
         });
     }
 

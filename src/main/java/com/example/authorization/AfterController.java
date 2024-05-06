@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-package com.example.authorization;public class AfterController {
-=======
 package com.example.authorization;
 
 import javafx.fxml.FXML;
@@ -13,5 +10,4 @@ public class AfterController {
 
     @FXML
     private Label labalProgramm;
->>>>>>> 9dd13c5 (Initial commit)
 }

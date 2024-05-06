@@ -25,13 +25,12 @@ public class DatabaseHandler extends Configs{
         String insert = "INSERT INTO" + Const.USER_TABLE + "(" +
                 Const.USER_NAME + "," + Const.USER_LOGIN + "," +
                 Const.USER_PASSWORD + ") VALUES(?,?,?)";
-
-        PreparedStatement prSt = getDbConnection().prepareStatement(insert);
-        prSt.setString(1,Name);
-        prSt.setString(2,Login);
-        prSt.setString(3,Password);
-
         try{
+            PreparedStatement prSt = getDbConnection().prepareStatement(insert);
+            prSt.setString(1,Name);
+            prSt.setString(2,Login);
+            prSt.setString(3,Password);
+
             prSt.executeUpdate();
         } catch (SQLException e){
             e.printStackTrace();
